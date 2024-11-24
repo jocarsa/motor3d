@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+	    <canvas id="canvas" width="800" height="800" style="border:1px solid black;"></canvas>
+
+		<script src="jvloadglb.js"></script>
+		<script src="jvrender.js"></script>
+		<script>
+
+			const glbFileUrl = 'persona2.glb';
+			parseGLBFile(glbFileUrl).then((structure) => {
+				 console.log("Parsed structure:", structure);
+				 renderOnCanvas(structure);
+			});
+			
+		</script>
+	</body>
+</html>

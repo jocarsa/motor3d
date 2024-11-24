@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<script src="jvloadglb.js"></script>
+		<script>
+			const glbFileUrl = 'persona.glb';
+			parseGLBFile(glbFileUrl).then((structure) => {
+				 console.log("Parsed structure:", structure);
+			});
+		</script>
+	</body>
+</html>
